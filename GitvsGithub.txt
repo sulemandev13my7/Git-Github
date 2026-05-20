@@ -1,0 +1,430 @@
+# Git Commands Cheat Sheet
+
+## Basic Commands
+
+# Check Git version
+
+git --version
+
+# Check repository status
+
+git status
+
+# Set global email
+
+git config --global user.email "[your-email@example.com](mailto:your-email@example.com)"
+
+# Set global username
+
+git config --global user.name "your name"
+
+# Show all Git configurations
+
+git config --list
+
+# Initialize repository
+
+git init
+
+## Add & Commit
+
+# Add specific files
+
+git add <file1> <file2>
+
+# Add all files
+
+git add .
+
+# Commit changes
+
+git commit -m "write message"
+
+# Commit tracked files directly
+
+git commit -am "message"
+
+## Logs & History
+
+# Show commit history
+
+git log
+
+# One-line history
+
+git log --oneline
+
+# Show branch graph
+
+git log --oneline --graph --all
+
+## Branching
+
+# Show branches
+
+git branch
+
+# Create branch
+
+git branch <branch-name>
+
+# Switch branch
+
+git switch <branch-name>
+
+# Create & switch branch together
+
+git switch -c <branch-name>
+
+# Old method to switch branch
+
+git checkout <branch-name>
+
+# Go back to main branch
+
+git checkout main
+
+# OR
+
+git switch main
+
+## Merge & Rebase
+
+# Merge branch
+
+git merge <branch-name>
+
+# Rebase branch
+
+git rebase <branch-name>
+
+# Cherry-pick commit
+
+git cherry-pick <commit-id>
+
+## Rename & Delete Branch
+
+# Rename branch
+
+git branch -m <old-branch-name> <new-branch-name>
+
+# Rename current branch
+
+git branch -m <new-name>
+
+# Safe delete branch
+
+git branch -d <branch-name>
+
+# Force delete branch
+
+git branch -D <branch-name>
+
+## Remote Repository Commands
+
+# Clone repository
+
+git clone <repository-url>
+
+# Connect remote repository
+
+git remote add origin <repository-url>
+
+# Show remote repositories
+
+git remote -v
+
+# Push code to GitHub
+
+git push origin main
+
+# Push new branch
+
+git push -u origin <branch-name>
+
+# Pull latest code
+
+git pull origin main
+
+# Fetch latest changes
+
+git fetch
+
+## File Management
+
+# See differences
+
+git diff
+
+# Remove file from staging
+
+git restore --staged <file-name>
+
+# Restore deleted/modified file
+
+git restore <file-name>
+
+# Remove tracked file
+
+git rm <file-name>
+
+# Rename file
+
+git mv <old-name> <new-name>
+
+## Commit Management
+
+# View commit details
+
+git show <commit-id>
+
+# Undo last commit (keep changes)
+
+git reset --soft HEAD~1
+
+# Undo last commit completely
+
+git reset --hard HEAD~1
+
+## Stash Commands
+
+# Save temporary work
+
+git stash
+
+# Restore stashed work
+
+git stash pop
+
+# Show stash list
+
+git stash list
+
+## Tags
+
+# Create tag
+
+git tag v1.0
+
+# Show tags
+
+git tag
+
+# Push tags
+
+git push origin --tags
+
+
+
+# GitHub Commands Cheat Sheet
+
+## Login & Setup
+
+# Configure GitHub username
+
+git config --global user.name "your-name"
+
+# Configure GitHub email
+
+git config --global user.email "[your-email@example.com](mailto:your-email@example.com)"
+
+# Check saved configuration
+
+git config --list
+
+## Create Local Repository
+
+# Initialize repository
+
+git init
+
+# Check status
+
+git status
+
+## Connect Local Project to GitHub
+
+# Add remote repository
+
+git remote add origin <repository-url>
+
+# Verify remote
+
+git remote -v
+
+## Clone Repository
+
+# Clone GitHub repository
+
+git clone <repository-url>
+
+## Add, Commit & Push
+
+# Add all files
+
+git add .
+
+# Commit changes
+
+git commit -m "Initial commit"
+
+# Push code to GitHub
+
+git push origin main
+
+# Push new branch first time
+
+git push -u origin <branch-name>
+
+## Pull & Fetch
+
+# Pull latest changes
+
+git pull origin main
+
+# Fetch latest changes
+
+git fetch
+
+## Branching
+
+# Show branches
+
+git branch
+
+# Create branch
+
+git branch <branch-name>
+
+# Switch branch
+
+git switch <branch-name>
+
+# Create & switch branch
+
+git switch -c <branch-name>
+
+# Push branch to GitHub
+
+git push -u origin <branch-name>
+
+## Merge
+
+# Switch to main branch
+
+git switch main
+
+# Merge branch
+
+git merge <branch-name>
+
+## Delete Branch
+
+# Delete local branch
+
+git branch -d <branch-name>
+
+# Force delete local branch
+
+git branch -D <branch-name>
+
+# Delete remote branch
+
+git push origin --delete <branch-name>
+
+## Rename Branch
+
+# Rename current branch
+
+git branch -m <new-branch-name>
+
+# Rename another branch
+
+git branch -m <old-name> <new-name>
+
+## Repository Information
+
+# Show remote repositories
+
+git remote -v
+
+# Show commit history
+
+git log
+
+# One-line history
+
+git log --oneline
+
+## Undo Changes
+
+# Remove file from staging
+
+git restore --staged <file-name>
+
+# Restore file changes
+
+git restore <file-name>
+
+# Undo last commit (keep changes)
+
+git reset --soft HEAD~1
+
+# Undo last commit completely
+
+git reset --hard HEAD~1
+
+## Stash
+
+# Save temporary work
+
+git stash
+
+# Restore stash
+
+git stash pop
+
+# Show stash list
+
+git stash list
+
+## Tags
+
+# Create tag
+
+git tag v1.0
+
+# Push tags
+
+git push origin --tags
+
+# Show tags
+
+git tag
+
+## GitHub Authentication (PAT)
+
+# Push with Personal Access Token
+
+# Username: your GitHub username
+
+# Password: your Personal Access Token (PAT)
+
+## Useful GitHub URLs
+
+# Create new repository
+
+https://github.com/new
+
+# GitHub homepage
+
+https://github.com
+
+# GitHub settings
+
+https://github.com/settings
+
+# Personal Access Tokens
+
+https://github.com/settings/tokens
+
